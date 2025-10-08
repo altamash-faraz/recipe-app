@@ -1,11 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Recipe App
+
+A simple recipe application built with Next.js that fetches recipes from TheMealDB API.
+
+## Features
+
+- **Recipe Search**: Search for recipes by name
+- **Recipe Grid**: Browse recipes in a clean grid layout
+- **Recipe Details**: View detailed information including ingredients and instructions
+- **Responsive Design**: Works on desktop and mobile devices
+- **Free API**: Uses TheMealDB free API (no API key required)
 
 ## Getting Started
 
-First, run the development server:
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
+2. **Run the Development Server**:
+   ```bash
+   npm run dev
 # or
 yarn dev
 # or

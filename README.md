@@ -1,4 +1,11 @@
-<div align="center">
+<d# 🍽️ **Recipe App** 🍽️
+
+*Discover Amazing Healthy Recipes from Around the World*
+
+## 🌟 **[🚀 Live Demo](https://vegrecipe-app.vercel.app/)** 🌟
+
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_App-success?style=for-the-badge&logo=vercel&logoColor=white)](https://vegrecipe-app.vercel.app/)
+[![Deployment Status](https://img.shields.io/badge/Deployment-Active-brightgreen?style=for-the-badge&logo=vercel)](https://vegrecipe-app.vercel.app/)align="center">
 
 # �️ **Recipe App** �️
 
@@ -56,6 +63,26 @@ Welcome to the **Recipe App** - your gateway to discovering delicious, healthy, 
     <td><strong>Lightning Fast</strong><br/>Powered by Next.js and optimized images</td>
   </tr>
 </table>
+
+---
+
+## 🌐 **Live Preview**
+
+**🎉 The app is live and ready to use!**
+
+**Access the app at**: [https://vegrecipe-app.vercel.app/](https://vegrecipe-app.vercel.app/)
+
+<div align="center">
+
+### 📱 **Try These Features Live:**
+- 🔍 **Search for recipes** like "pasta", "soup", or "salad"
+- 📖 **Click any recipe card** to see detailed cooking instructions
+- 🎬 **Watch cooking videos** on YouTube (when available)
+- 📱 **Test responsive design** on your mobile device
+
+[![Visit Live App](https://img.shields.io/badge/🚀_Visit_Live_App-Click_Here-success?style=for-the-badge&logo=vercel&logoColor=white)](https://vegrecipe-app.vercel.app/)
+
+</div>
 
 ---
 
@@ -172,7 +199,13 @@ This app uses [TheMealDB API](https://www.themealdb.com/api.php) - a free, open 
 
 ## 🚀 **Deployment**
 
-### Deploy to Vercel (Recommended)
+### ✅ **Live Production App**
+
+🎉 **The app is currently live and deployed on Vercel!**
+
+**🌐 Live URL**: [https://vegrecipe-app.vercel.app/](https://vegrecipe-app.vercel.app/)
+
+### Deploy Your Own Copy
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/altamash-faraz/recipe-app)
 
@@ -180,7 +213,7 @@ This app uses [TheMealDB API](https://www.themealdb.com/api.php) - a free, open 
 
 1. **Build the project**: `npm run build`
 2. **Deploy to your preferred platform**:
-   - Vercel
+   - Vercel ✅ (Currently deployed)
    - Netlify
    - AWS Amplify
    - Railway

@@ -63,8 +63,8 @@ export default function RecipeDetail() {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-blue-500"></div>
-          <p className="mt-4 text-gray-600">Loading recipe...</p>
+          <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-green-600"></div>
+          <p className="mt-4 text-gray-700 font-medium">Loading recipe...</p>
         </div>
       </div>
     );
@@ -74,10 +74,10 @@ export default function RecipeDetail() {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
-          <p className="text-gray-600 mb-4">Recipe not found.</p>
+          <p className="text-gray-700 mb-4 font-medium">Recipe not found.</p>
           <button
             onClick={() => router.push('/')}
-            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+            className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 font-medium"
           >
             Back to Home
           </button>
@@ -94,7 +94,7 @@ export default function RecipeDetail() {
         <div className="max-w-7xl mx-auto px-4 py-4">
           <button
             onClick={() => router.push('/')}
-            className="text-blue-500 hover:text-blue-600 mb-2"
+            className="text-green-600 hover:text-green-700 mb-2 font-medium"
           >
             ← Back to recipes
           </button>
@@ -115,25 +115,25 @@ export default function RecipeDetail() {
               />
             </div>
             
-            <div className="mt-6 bg-white rounded-lg p-6 shadow-sm">
-              <h2 className="text-xl font-semibold mb-4">Recipe Info</h2>
-              <div className="space-y-2">
-                <div className="flex justify-between">
-                  <span className="font-medium">Category:</span>
-                  <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-sm">
+            <div className="mt-6 bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+              <h2 className="text-xl font-bold mb-4 text-gray-900">Recipe Info</h2>
+              <div className="space-y-3">
+                <div className="flex justify-between items-center">
+                  <span className="font-semibold text-gray-800">Category:</span>
+                  <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
                     {meal.strCategory}
                   </span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="font-medium">Cuisine:</span>
-                  <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-sm">
+                <div className="flex justify-between items-center">
+                  <span className="font-semibold text-gray-800">Cuisine:</span>
+                  <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">
                     {meal.strArea}
                   </span>
                 </div>
                 {meal.strTags && (
-                  <div className="flex justify-between">
-                    <span className="font-medium">Tags:</span>
-                    <span className="text-gray-600 text-sm">{meal.strTags}</span>
+                  <div className="flex justify-between items-center">
+                    <span className="font-semibold text-gray-800">Tags:</span>
+                    <span className="text-gray-700 text-sm font-medium">{meal.strTags}</span>
                   </div>
                 )}
               </div>
@@ -144,9 +144,9 @@ export default function RecipeDetail() {
                     href={meal.strYoutube}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600 transition-colors"
+                    className="inline-block px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors font-medium"
                   >
-                    Watch on YouTube
+                    📺 Watch on YouTube
                   </a>
                 </div>
               )}
@@ -156,25 +156,25 @@ export default function RecipeDetail() {
           {/* Ingredients and Instructions */}
           <div className="space-y-6">
             {/* Ingredients */}
-            <div className="bg-white rounded-lg p-6 shadow-sm">
-              <h2 className="text-xl font-semibold mb-4">Ingredients</h2>
-              <ul className="space-y-2">
+            <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+              <h2 className="text-xl font-bold mb-4 text-gray-900">🥗 Ingredients</h2>
+              <ul className="space-y-3">
                 {ingredients.map((item, index) => (
                   <li key={index} className="flex justify-between items-center py-2 border-b border-gray-100 last:border-b-0">
-                    <span className="font-medium">{item.ingredient}</span>
-                    <span className="text-gray-600">{item.measure}</span>
+                    <span className="font-semibold text-gray-800">{item.ingredient}</span>
+                    <span className="text-gray-700 font-medium">{item.measure}</span>
                   </li>
                 ))}
               </ul>
             </div>
 
             {/* Instructions */}
-            <div className="bg-white rounded-lg p-6 shadow-sm">
-              <h2 className="text-xl font-semibold mb-4">Instructions</h2>
+            <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+              <h2 className="text-xl font-bold mb-4 text-gray-900">👩‍🍳 Instructions</h2>
               <div className="prose prose-sm max-w-none">
                 {meal.strInstructions.split('\n').map((paragraph, index) => (
                   paragraph.trim() && (
-                    <p key={index} className="mb-3 text-gray-700 leading-relaxed">
+                    <p key={index} className="mb-4 text-gray-800 leading-relaxed font-medium">
                       {paragraph.trim()}
                     </p>
                   )

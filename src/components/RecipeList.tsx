@@ -66,7 +66,7 @@ export default function RecipeList() {
               type="text"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              placeholder="Search for vegetarian recipes..."
+              placeholder="Search for healthy recipes..."
               className="flex-1 px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500"
             />
             <button
@@ -83,14 +83,14 @@ export default function RecipeList() {
       {loading && (
         <div className="text-center py-8">
           <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-green-600"></div>
-          <p className="mt-4 text-gray-700 font-medium">Loading vegetarian recipes...</p>
+          <p className="mt-4 text-gray-700 font-medium">Loading healthy recipes...</p>
         </div>
       )}
 
       {/* No Results */}
       {!loading && meals.length === 0 && (
         <div className="text-center py-8">
-          <p className="text-gray-700 font-medium">No vegetarian recipes found. Try a different search term.</p>
+          <p className="text-gray-700 font-medium">No healthy recipes found. Try a different search term.</p>
         </div>
       )}
 

@@ -1,15 +1,15 @@
 <div align="center">
 
-# 🌱 **Vegetarian Recipe App** 🌱
+# �️ **Recipe App** �️
 
-*Discover Amazing Plant-Based Recipes from Around the World*
+*Discover Amazing Healthy Recipes from Around the World*
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.5.4-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
-![Recipe App Banner](https://via.placeholder.com/800x300/4ade80/ffffff?text=🌱+Vegetarian+Recipe+App+🥗)
+![Recipe App Banner](https://via.placeholder.com/800x300/4ade80/ffffff?text=�️+Recipe+App+🥗)
 
 </div>
 
@@ -17,10 +17,10 @@
 
 ## 🍃 **About This Project**
 
-Welcome to the **Vegetarian Recipe App** - your gateway to discovering delicious, healthy, and sustainable plant-based recipes! Built with modern web technologies, this app provides a seamless experience for vegetarian food enthusiasts.
+Welcome to the **Recipe App** - your gateway to discovering delicious, healthy, and sustainable recipes! Built with modern web technologies, this app provides a seamless experience for food enthusiasts.
 
 ### ✨ **Why This App?**
-- 🌿 **100% Vegetarian**: Only plant-based recipes
+- 🥗 **Healthy Focus**: Nutritious and delicious recipes
 - 🎨 **Beautiful UI**: Clean, modern design with excellent readability
 - 📱 **Responsive**: Perfect on desktop, tablet, and mobile
 - ⚡ **Fast**: Built with Next.js for optimal performance
@@ -33,7 +33,7 @@ Welcome to the **Vegetarian Recipe App** - your gateway to discovering delicious
 <table>
   <tr>
     <td align="center">🔍</td>
-    <td><strong>Smart Search</strong><br/>Find vegetarian recipes by name with intelligent filtering</td>
+    <td><strong>Smart Search</strong><br/>Find healthy recipes by name with intelligent filtering</td>
   </tr>
   <tr>
     <td align="center">🎨</td>
@@ -225,10 +225,10 @@ If you found this project helpful, please consider:
 [![Star this repo](https://img.shields.io/github/stars/altamash-faraz/recipe-app?style=social)](https://github.com/altamash-faraz/recipe-app)
 [![Fork this repo](https://img.shields.io/github/forks/altamash-faraz/recipe-app?style=social)](https://github.com/altamash-faraz/recipe-app/fork)
 
-**Made with 💚 for the vegetarian community**
+**Made with 💚 for the cooking community**
 
 ---
 
-*Happy Cooking! 🌱👨‍🍳👩‍🍳*
+*Happy Cooking! �️👨‍🍳👩‍🍳*
 
 </div>

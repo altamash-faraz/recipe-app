@@ -203,7 +203,7 @@ This app uses [TheMealDB API](https://www.themealdb.com/api.php) - a free, open 
 
 🎉 **The app is currently live and deployed on Vercel!**
 
-**🌐 Live URL**: [https://vegrecipe-app.vercel.app/](https://vegrecipe-app.vercel.app/)
+**🌐 Live URL**: [https://vegrecipe-app.vercel.app/](https://vegrecipe-app.vercel.app/) ⚡
 
 ### Deploy Your Own Copy
 

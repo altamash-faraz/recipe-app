@@ -15,7 +15,7 @@ interface Meal {
 export default function RecipeList() {
   const [meals, setMeals] = useState<Meal[]>([]);
   const [loading, setLoading] = useState(true);
-  const [searchTerm, setSearchTerm] = useState('vegetarian');
+  const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
     fetchMeals();
@@ -24,26 +24,41 @@ export default function RecipeList() {
   const fetchMeals = async () => {
     try {
       setLoading(true);
-      // First try to get vegetarian category meals
-      let response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=Vegetarian`);
-      let data = await response.json();
-      
-      // If no vegetarian category, search for vegetarian recipes
-      if (!data.meals) {
-        response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`);
-        data = await response.json();
-        // Filter results to only show vegetarian-friendly meals
-        const vegetarianKeywords = ['vegetarian', 'veg', 'salad', 'pasta', 'pizza', 'soup', 'rice', 'bean', 'lentil', 'mushroom', 'cheese', 'egg'];
-        const filteredMeals = data.meals?.filter((meal: Meal) => 
-          vegetarianKeywords.some(keyword => 
-            meal.strMeal.toLowerCase().includes(keyword) ||
-            meal.strCategory.toLowerCase().includes('vegetarian')
-          )
-        ) || [];
-        setMeals(filteredMeals);
+      let allMeals: Meal[] = [];
+
+      if (searchTerm.trim()) {
+        // Search for specific recipes when user types something
+        const response = await fetch(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchTerm}`);
+        const data = await response.json();
+        allMeals = data.meals || [];
       } else {
-        setMeals(data.meals || []);
+        // When no search term, load recipes from multiple popular categories
+        const categories = ['Chicken', 'Seafood', 'Vegetarian', 'Dessert', 'Pasta', 'Beef', 'Breakfast', 'Side'];
+        
+        const categoryPromises = categories.map(async (category) => {
+          try {
+            const response = await fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`);
+            const data = await response.json();
+            // Take first 8 recipes from each category to have variety
+            return (data.meals || []).slice(0, 8);
+          } catch (error) {
+            console.error(`Error fetching ${category} recipes:`, error);
+            return [];
+          }
+        });
+
+        const categoryResults = await Promise.all(categoryPromises);
+        // Flatten all results and shuffle them for variety
+        allMeals = categoryResults.flat();
+        
+        // Shuffle the array to mix different categories
+        allMeals = allMeals.sort(() => Math.random() - 0.5);
+        
+        // Limit to 32 recipes for better performance
+        allMeals = allMeals.slice(0, 32);
       }
+
+      setMeals(allMeals);
     } catch (error) {
       console.error('Error fetching meals:', error);
       setMeals([]);
@@ -66,7 +81,7 @@ export default function RecipeList() {
               type="text"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              placeholder="Search for healthy recipes..."
+              placeholder="Search for any recipe... (chicken, pasta, dessert, etc.)"
               className="flex-1 px-4 py-2 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500"
             />
             <button
@@ -83,14 +98,14 @@ export default function RecipeList() {
       {loading && (
         <div className="text-center py-8">
           <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-green-600"></div>
-          <p className="mt-4 text-gray-700 font-medium">Loading healthy recipes...</p>
+          <p className="mt-4 text-gray-700 font-medium">Loading delicious recipes...</p>
         </div>
       )}
 
       {/* No Results */}
       {!loading && meals.length === 0 && (
         <div className="text-center py-8">
-          <p className="text-gray-700 font-medium">No healthy recipes found. Try a different search term.</p>
+          <p className="text-gray-700 font-medium">No recipes found. Try searching for chicken, pasta, or dessert.</p>
         </div>
       )}
 

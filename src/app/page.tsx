@@ -6,7 +6,7 @@ export default function Home() {
       <header className="bg-white shadow-sm border-b-2 border-green-100">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <h1 className="text-3xl font-bold text-gray-900">�️ Recipe App</h1>
-          <p className="text-gray-700 mt-2 font-medium">Discover delicious healthy recipes from around the world</p>
+          <p className="text-gray-700 mt-2 font-medium">Discover delicious recipes from around the world - from appetizers to desserts</p>
         </div>
       </header>
       

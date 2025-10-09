@@ -10,7 +10,7 @@ export default function Home() {
               🍽️ Recipe App
             </h1>
             <p className="text-green-100 text-lg md:text-xl font-medium max-w-3xl mx-auto mb-6 leading-relaxed">
-              Discover delicious recipes from around the world - from appetizers to desserts!
+              Discover delicious recipes from around the world - from appetizers to desserts! ✨
             </p>
             <div className="flex flex-wrap justify-center gap-3 max-w-md mx-auto">
               <span className="bg-white/20 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-white/30 transition-all cursor-default">

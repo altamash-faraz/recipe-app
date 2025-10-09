@@ -1,13 +1,13 @@
-<d# 🍽️ **Recipe App** 🍽️
+ 🍽️ **Recipe App** 🍽️
 
 *Discover Amazing Healthy Recipes from Around the World*
 
-## 🌟 **[🚀 Live Demo](https://vegrecipe-app.vercel.app/)** 🌟
+ 🌟 **[🚀 Live Demo](https://vegrecipe-app.vercel.app/)** 🌟
 
 [![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Visit_App-success?style=for-the-badge&logo=vercel&logoColor=white)](https://vegrecipe-app.vercel.app/)
 [![Deployment Status](https://img.shields.io/badge/Deployment-Active-brightgreen?style=for-the-badge&logo=vercel)](https://vegrecipe-app.vercel.app/)align="center">
 
-# �️ **Recipe App** �️
+�️ **Recipe App** �️
 
 *Discover Amazing Healthy Recipes from Around the World*
 

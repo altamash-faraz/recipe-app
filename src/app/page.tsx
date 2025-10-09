@@ -37,7 +37,7 @@ export default function Home() {
       <footer className="bg-white border-t mt-16">
         <div className="max-w-7xl mx-auto px-4 py-6">
           <p className="text-center text-gray-600 font-medium">
-            🍽️ Recipe data provided by TheMealDB API
+            🍽️ Recipe data provided by TheMealDB API • v1.1.0
           </p>
         </div>
       </footer>

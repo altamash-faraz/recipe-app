@@ -3,15 +3,11 @@
 > Discover delicious recipes from around the world with our modern, responsive web application.
 
 [![Next.js](https://img.shields.io/badge/Next.js-15.5.4-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://vercel.com/)
 
 ## ✨ Features
 
 - 🔍 **Smart Search** - Find recipes by name with real-time filtering
-- 🎨 **Beautiful UI** - Clean, modern design with excellent readability
-- 📱 **Responsive Design** - Perfect experience on all devices
 - 📖 **Detailed Recipes** - Complete ingredients, instructions, and cooking tips
 - 🎬 **Video Integration** - Watch cooking videos directly from YouTube
 - ⚡ **Lightning Fast** - Powered by Next.js with optimized performance
